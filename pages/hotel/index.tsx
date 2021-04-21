@@ -18,6 +18,8 @@ const Hotel = () => {
     return (<>
         <Head>
             <title>Image Optimization In Next js</title>
+
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"/> 
             <meta name="description" content="Next Js Image optimization and performance" />
             <meta name="keywords" content="next/image,optimization,next js" />
         </Head>
