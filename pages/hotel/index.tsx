@@ -16,10 +16,10 @@ const Hotel = () => {
             gap: "20px",
             margin: "20px"
         }}>
-{/* 
+
             {
                 Array.from(Array(20)).map((i, n) => <Image quality={100} key={n} alt="nature" src="/2.png" height={500} width={400} />)
-            } */}
+            }
 
 
 {
