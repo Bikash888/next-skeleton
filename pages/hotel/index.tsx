@@ -12,7 +12,7 @@ const Hotel = () => {
         }}>
             
             {
-                Array.from(Array(10)).map((i,n)=><img  key={n} alt="nature" src="/sample.png" height={500} width={400}/>)
+                Array.from(Array(10)).map((i,n)=><Image quality={100}  key={n} alt="nature" src="/sample.png" height={500} width={400} />)
             }
 
         </div>
