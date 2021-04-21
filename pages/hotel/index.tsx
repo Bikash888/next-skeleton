@@ -28,7 +28,7 @@ const Hotel = () => {
             {
                 book && book?.data.map((item, index) =>
                     <Card key={index} hoverable className={styles.bookCard}
-                        cover={<Image loading="lazy" quality={100} alt="books-roamantic" src={"/sample.png"} height={400} width={500} />}
+                        cover={<Image loading="lazy" quality={100} alt="books-roamantic" src={item?.image} height={400} width={500} />}
                     >  <div className={styles.bookInfo}>
                             <strong>{item.title}</strong>
                             <strong className={styles.author}>author:{item.author}</strong>
