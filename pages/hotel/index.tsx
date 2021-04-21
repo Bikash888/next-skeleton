@@ -14,12 +14,12 @@ const { Meta } = Card;
 const { Paragraph } = Typography
 const Hotel = () => {
     const { data: book } = useQuery("books", getPostList)
-    
+
     return (<>
         <Head>
             <title>Image Optimization In Next js</title>
 
-<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"/> 
+            <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
             <meta name="description" content="Next Js Image optimization and performance" />
             <meta name="keywords" content="next/image,optimization,next js" />
         </Head>
@@ -28,7 +28,7 @@ const Hotel = () => {
             {
                 book && book?.data.map((item, index) =>
                     <Card key={index} hoverable className={styles.bookCard}
-                        cover={<Image quality={100} layout="intrinsic" src={item?.image} height={400} width={500} />}
+                        cover={<Image quality={100} alt="books-roamantic" src={item?.image} height={400} width={500} />}
                     >  <div className={styles.bookInfo}>
                             <strong>{item.title}</strong>
                             <strong className={styles.author}>author:{item.author}</strong>
