@@ -1,0 +1,29 @@
+.bookCard {
+    max-width: 500px;
+    border: 1px solid gray;
+    border-radius: 12px;
+}
+
+.cardGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 20px 60px;
+}
+
+.bookTop {
+    font-size: 36px;
+    text-align: center;
+    font-weight: bold;
+    color: indianred;
+}
+
+.bookInfo {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(8, 8, 102);
+}
+
+.author {
+    color: red;
+}
