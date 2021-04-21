@@ -28,7 +28,7 @@ const Hotel = () => {
             {
                 book && book?.data.map((item, index) =>
                     <Card key={index} hoverable className={styles.bookCard}
-                        cover={<Image quality={100} alt="books-roamantic" src={item?.image} height={400} width={500} />}
+                        cover={<Image loading="lazy" quality={100} alt="books-roamantic" src={item?.image} height={400} width={500} />}
                     >  <div className={styles.bookInfo}>
                             <strong>{item.title}</strong>
                             <strong className={styles.author}>author:{item.author}</strong>
@@ -39,12 +39,7 @@ const Hotel = () => {
                 )
             }
         </div>
-        <div style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr 1fr",
-            gap: "20px",
-            margin: "20px"
-        }}>
+        <div className={styles.cardGrid}>
             {
                 Array.from(Array(20)).map((i, n) => <Image quality={100} key={n} alt="nature" src={`/sample.png`} height={500} width={400} />)
             }
