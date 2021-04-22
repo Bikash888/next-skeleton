@@ -15,8 +15,8 @@
     .cardGrid {
         display: grid;
         grid-template-columns: 1fr ;
-        gap: 20px;
-        margin: 20px 60px;
+        gap: 0px;
+        margin: 0px 0px;
         
     }
 
