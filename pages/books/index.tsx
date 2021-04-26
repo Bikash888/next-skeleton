@@ -5,7 +5,8 @@ import axios from 'axios';
 import { useQuery } from 'react-query';
 import styles from './Hotel.module.css';
 import { Card, Typography,Spin } from 'antd';
-import {GetStaticProps} from 'next'
+import {GetStaticProps} from 'next';
+import {ButtonComponent} from '@/components/button';
 
 const getPostList = (): Promise<any> => {
     return axios.get("http://private-anon-28db3fcbaa-bookstore.apiary-mock.com/data/books")
@@ -28,9 +29,10 @@ const Hotel =  (props) => {
             <meta name="keywords" content="next/image,optimization,next js" />
         </Head>
         <h1 className={styles.bookTop}>Book House</h1>
+        <ButtonComponent/>
         <div className={styles.cardGrid}>
             {
-                isLoading ? <Spin/> :book?.data?.map((item, index) =>
+                isLoading ? <Spin size="large"/> :book?.data?.map((item, index) =>
                     <Card key={index} hoverable className={styles.bookCard}
                         cover={<Image  quality={100} alt="books-roamantic" src={item?.image} height={400} width={500} />}
                     >  <div className={styles.bookInfo}>
