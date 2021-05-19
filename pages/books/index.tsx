@@ -31,7 +31,7 @@ const Hotel = (props) => {
         <h1 className={styles.bookTop}>Book House</h1>
         <div className={styles.cardGrid}>
             {
-                Array.from(Array(20)).map((i, n) => <Image quality={100} key={n} alt="nature" src={`/sample.png`} height={500} width={400} />)
+                Array.from(Array(9)).map((i, n) => <Image quality={100} key={n} alt="nature" src={`/sample.png`} height={300} width={300}  />)
             }
         </div>
         <div className={styles.cardGrid}>
